@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eaeded;
+}
+
+/* -------------------------------- Carousel -------------------------------- */
+
+.carousel {
+  padding: 20px;
+  background: #fff;
+}
+
+.carousel__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.carousel__btn {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #007185;
+}
+
+.carousel-container {
+  width: 95vw;
+  height: 216px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__lists {
+  list-style: none;
+  display: flex;
+}
+
+.carousel__lists {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+
+  /* left: 50%;
+  transform: translateX(-50%);
+*/
+  /* left: 100%;
+  transform: translateX(-100%);
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  left: 0;
+  transform: translateX(0%); */
+}
+
+.carousel__list {
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 100px;
+  transform: translateY(-50%);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 1px 3px #888;
+  cursor: pointer;
+  z-index: 1;
+  /* cursor: default;  */
+  transition-delay: 0.5s;
+}
+
+.carousel__arrow:focus {
+  outline: 5px auto #008296;
+}
+
+.carousel__left-arrow {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.carousel__right-arrow {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
